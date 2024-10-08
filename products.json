@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "name" : "TV",
+        "price" : 200
+    },
+    {
+        "id":2,
+        "name" : "phone",
+        "price" : 600
+    },
+    {
+        "id":3,
+        "name" : "parfum",
+        "price" : 350
+    },
+    {
+        "id":4,
+        "name" : "PC",
+        "price" : 1300
+    }
+
+]
