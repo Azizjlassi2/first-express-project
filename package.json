@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "test"
   },
   "author": "Jlassi Mohamed Aziz",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.21.0"
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.7.3"
   }
 }

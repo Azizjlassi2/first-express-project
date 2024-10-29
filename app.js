@@ -1,9 +1,22 @@
 const express = require("express")
 const fs = require("fs") 
-
+const mongoose = require('mongoose')
+const dotenv = require('dotenv')
 
 
 const app = express()
+
+dotenv.config({path:"./.env"})
+
+const DB = process.env.DATABASE_URL.replace("<db_password>",process.env.DATABASE_PASSWORD);
+
+mongoose.connect(DB).then(() => {
+    console.log("DB Connection established");
+}).catch( (err)=> {
+    console.log(err)
+})
+
+
 app.use(express.json())
 
 const port = 3000
